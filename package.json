@@ -1,45 +1,56 @@
 {
-    "name": "litegraph.js",
-    "version": "0.7.9",
-    "description": "A graph node editor similar to PD or UDK Blueprints. It works in an HTML5 Canvas and allows to export graphs to be included in applications.",
-    "main": "build/litegraph.js",
-    "types": "src/litegraph.d.ts",
-    "directories": {
-        "doc": "doc"
-    },
-    "private": false,
-    "scripts": {
-        "prebuild": "rimraf build",
-        "build": "grunt build",
-        "start": "nodemon utils/server.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "npx prettier --write src/**/*.* css/**/*.*",
-        "lint": "npx eslint src",
-        "lint:fix": "npx eslint --fix src"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jagenjo/litegraph.js.git"
-    },
-    "author": "jagenjo",
-    "license": "MIT",
-    "files": [
-        "build",
-        "css/litegraph.css",
-        "src/litegraph.d.ts"
-    ],
-    "bugs": {
-        "url": "https://github.com/jagenjo/litegraph.js/issues"
-    },
-    "homepage": "https://github.com/jagenjo/litegraph.js#readme",
-    "devDependencies": {
-        "express": "^4.17.1",
-        "google-closure-compiler": "^20171112.0.0",
-        "grunt": "^1.1.0",
-        "grunt-cli": "^1.2.0",
-        "grunt-closure-tools": "^1.0.0",
-        "grunt-contrib-concat": "^1.0.1",
-        "nodemon": "^1.19.4",
-        "rimraf": "^2.7.1"
-    }
+  "name": "litegraph.js",
+  "version": "0.7.9",
+  "description": "A graph node editor similar to PD or UDK Blueprints. It works in an HTML5 Canvas and allows to export graphs to be included in applications.",
+  "main": "build/litegraph.js",
+  "types": "src/litegraph.d.ts",
+  "directories": {
+    "doc": "doc"
+  },
+  "private": false,
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "grunt build",
+    "start": "nodemon utils/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "npx prettier --write src/**/*.* css/**/*.*",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint --fix src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagenjo/litegraph.js.git"
+  },
+  "author": "jagenjo",
+  "license": "MIT",
+  "files": [
+    "build",
+    "css/litegraph.css",
+    "src/litegraph.d.ts"
+  ],
+  "bugs": {
+    "url": "https://github.com/jagenjo/litegraph.js/issues"
+  },
+  "homepage": "https://github.com/jagenjo/litegraph.js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@eslint/eslintrc": "^0.3.0",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@rollup/plugin-url": "^6.0.0",
+    "@types/node": "^14.14.27",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "less": "^4.1.1",
+    "postcss": "^8.2.5",
+    "rollup": "^2.38.5",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.1.3"
+  }
 }
